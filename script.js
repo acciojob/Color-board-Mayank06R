@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const container = document.querySelector('.container');
 
 // Generate 800 boxes
@@ -12,7 +11,7 @@ document.querySelectorAll('.square').forEach(square => {
     square.addEventListener('mouseover', () => {
         square.style.backgroundColor = getRandomColor();
         setTimeout(() => {
-            square.style.backgroundColor = '#fff';
+            square.style.backgroundColor = 'rgb(29, 29, 29)'; // Revert to initial color
         }, 1000);
     });
 });
